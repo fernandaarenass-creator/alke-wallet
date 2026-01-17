@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alke Wallet</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/design.css">
+</head>
+
+<body class="bg-image">
+
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark wallet-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="menu.html">
+                    <i class="bi bi-wallet-fill"></i> Alke Wallet
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#walletNavbar"
+                    aria-controls="walletNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="walletNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="redireccion('1')">Depositar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="redireccion('2')">Enviar Dinero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="redireccion('3')">Movimientos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="login.html">Salir</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="container mt-4">
+        <div class="row g-4">
+
+            <!-- ===== ASIDE / MENU PRINCIPAL ===== -->
+            <aside class="col-md-5">
+                <section class="btn-gradient login-card p-4 shadow-lg">
+                    <header>
+                        <h5 class="d-flex align-items-center">
+                            <i class="bi bi-menu-button-wide me-2 icon-fixed"></i>
+                            Menú Principal
+                        </h5>
+                    </header>
+
+                    <div class="form-group mt-3">
+                        <label for="saldo">Saldo disponible:</label>
+                        <input type="number" class="form-control custom-input-bg" id="saldo" readonly>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- ===== SECTION / CONTENIDO PRINCIPAL ===== -->
+            <section class="col-md-7">
+                <article class="p-3">
+                    <canvas id="graph"></canvas>
+                </article>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/saldo.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+
+</body>
+
+</html>
