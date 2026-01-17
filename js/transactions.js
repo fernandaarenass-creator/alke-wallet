@@ -23,7 +23,7 @@ function cargarTransacciones() {
 
         item.innerHTML = `
             <div>
-                <strong>${tx.tipo}</strong><br>
+                <strong>${tx.tipo} :</strong><br>
                 <small class="text-muted">${tx.fecha}</small>
             </div>
             <span class="${tx.tipo === 'Depósito'|| tx.tipo === 'Envío'  ? 'text-success' : 'text-danger'} fw-bold">
