@@ -66,7 +66,7 @@ Los datos se almacenan utilizando `localStorage`, por lo que no se requiere back
 ## ▶️ Cómo ejecutar el proyecto
 
 1. Clonar el repositorio:
-git clone https://github.com/tu-usuario/alke-wallet.git
+git clone https://github.com/fernandaarenass-creator/alke-wallet.git
 
 2. Abrir el archivo `login.html` en el navegador.
 
